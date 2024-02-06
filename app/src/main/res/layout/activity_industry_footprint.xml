@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/userinputget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/b3"
+        android:layout_above="@+id/btns">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Take responsibility for your personal carbon footprint!"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/Title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/electricity" />
+
+        <TextView
+            android:id="@+id/fragmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Enter Electricity use: Total kilowatt-hours used from electricity bills."
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/fragmentTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Enter Usage..."
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/radiobtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="@color/white"
+                android:paddingVertical="8dp"
+                android:text="Kwhs"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radiobtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="@color/white"
+                android:paddingVertical="8dp"
+                android:text="W/hs"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/lighterGray"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <!-- Add similar styling to other Buttons -->
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:onClick="Previous"
+            android:padding="15dp"
+            android:text="Previous"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:onClick="SaveandNext"
+            android:padding="15dp"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/resultPage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:onClick="resultPage"
+            android:padding="15dp"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

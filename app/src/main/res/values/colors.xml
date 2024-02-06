@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Shades of black -->
+    <color name="darkerGray">#333333</color>
+    <color name="darkGray">#666666</color>
+    <color name="gray">#999999</color>
+    <color name="lightGray">#CCCCCC</color>
+    <color name="lighterGray">#EEEEEE</color>
+
+    <!-- Shades of green -->
+    <color name="darkGreen">#006400</color>
+    <color name="green">#008000</color>
+    <color name="lightGreen">#00FF00</color>
+    <color name="lighterGreen">#90EE90</color>
+
+</resources>

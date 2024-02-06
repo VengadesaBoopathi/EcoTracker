@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/b3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Welcome to EcoTracer! To personalize your carbon footprint analysis, please  Choose your avatar and enter your eco-warrior name" />
+
+    <LinearLayout
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/subtopic">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="previous"
+            app:srcCompat="@drawable/previous" />
+
+        <ImageView
+            android:id="@+id/avatarimg"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/avatar1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:onClick="next"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/next" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/carbon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:onClick="opencarbonCalculator"
+        android:padding="20dp"
+        android:text="Continue to Calculate Carbon FootPrint"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Eco-warrior name"
+        android:inputType="text"
+        android:padding="20dp" />
+    <TextView
+        android:id="@+id/subtopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:layout_below="@id/topic"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/lighterGreen"
+        android:text="Chosse Your Avatar" />
+
+
+
+</RelativeLayout>

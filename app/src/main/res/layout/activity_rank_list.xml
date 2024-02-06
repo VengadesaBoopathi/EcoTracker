@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b3"
+    tools:context=".RankList">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/subtopic"
+            android:padding="20dp"
+            >
+
+            <!-- Table headers -->
+            <TableRow>
+                <TextView
+                    android:text="Rank"
+                    android:textStyle="bold"
+                    android:layout_height="120dp"
+                    android:layout_width="90dp"
+                    android:textColor="@color/lightGreen"
+                    android:textSize="20dp"
+                    android:padding="18dp"/>
+                <TextView
+                    android:text="Eco Tracer Name"
+                    android:layout_height="120dp"
+                    android:layout_width="140dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lightGreen"
+                    android:textSize="20dp"
+                    android:padding="18dp"/>
+                <TextView
+                    android:text="Co2 Emissions in Kg"
+                    android:textStyle="bold"
+                    android:textColor="@color/lightGreen"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="120dp"
+                    android:layout_width="150dp"
+                    android:padding="18dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="RankList" />
+
+    <TextView
+        android:id="@+id/subtopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/topic"
+        android:text="Compare Your Carbon FootPrint With Other Users" />
+</RelativeLayout>

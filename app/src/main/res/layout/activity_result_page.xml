@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/b3"
+tools:context=".ResultPage">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Your annual emissions:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24dp" />
+    <TextView
+        android:id="@+id/IndustryIntro"
+        android:layout_below="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Your annual emissions:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24dp" />
+
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:text="The emissions are caused within the following categories mentioned in Kg :"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+<!--    <com.github.mikephil.charting.charts.PieChart-->
+<!--        android:id="@+id/pieChart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_below="@id/info"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true" />-->
+
+    <TableLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_below="@id/info"
+        >
+        <!-- Other rows and columns go here -->
+    </TableLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/black"
+        android:onClick="openRankList"
+        android:text="View RankList" />
+
+    <TextView
+        android:id="@+id/total"
+        android:padding="20dp"
+        android:textColor="@color/lightGreen"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IndustryIntro"
+        android:text="TextView" />
+
+</RelativeLayout>
+</ScrollView>
